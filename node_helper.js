@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------
  * Magic Mirror
- * Module: MMM-CaravanPiClimate
+ * Module: MMM-CaravanPiTemperature
  *
  * CaravanPi Module
  * see https://github.com/spitzlbergerj/CaravanPi for more Information 

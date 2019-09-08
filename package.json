@@ -1,8 +1,8 @@
 {
-  "name": "MMM-CaravanPiClimate",
+  "name": "MMM-CaravanPiTemperature",
   "version": "1.0.0",
   "description": "Todo: Insert description here!",
-  "main": "MMM-CaravanPiClimate.js",
+  "main": "MMM-CaravanPiTemperature.js",
   "author": "spitzlbergerj",
   "license": "MIT",
   "devDependencies": {
