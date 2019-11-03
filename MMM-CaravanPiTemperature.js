@@ -113,7 +113,7 @@ getDom: function(){
 		}
 		else if (this.config.style == "boxes") {
 			var boxRowElement = document.createElement("td");
-			boxRowElement.style.padding = '20px';
+			boxRowElement.className = 'sensorBoxRowElement';
 			
 			var tableInner = document.createElement("table");
 			tableInner.style.border= '1px solid #ffffff';
