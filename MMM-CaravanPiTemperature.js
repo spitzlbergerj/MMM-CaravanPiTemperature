@@ -35,7 +35,7 @@ start: function (){
 	
 	this.valueList = new Array();
 	var i = 0;
-	Log.log('sensors: ', this.config.sensors.length, this.config.sensors);
+	// Log.log('sensors: ', this.config.sensors.length, this.config.sensors);
 	while(i<this.config.sensors.length){
 		this.valueList[i] = new Object();
 		this.valueList[i]["name"] = this.config.sensors[i]["name"];
@@ -44,7 +44,7 @@ start: function (){
 		this.valueList[i]["temperature"] = "0";
 		i+=1;
 	}
-	Log.log('valueList: ', this.valueList);
+	// Log.log('valueList: ', this.valueList);
 	this.sendSocketNotification(
 		'CONFIG',
 		{
@@ -176,23 +176,8 @@ getDom: function(){
 	return wrapper
 },
 
-/*
-notificationReceived: function(notification, payload, sender){
-	switch(notification) {
-		case "DOM_OBJECTS_CREATED":
-			var timer = setInterval(()=>{
-				var countElm = document.getElementById("COUNT")
-				this.sendSocketNotification("DO_YOUR_JOB", this.count)
-				this.count++
-			}, 1000)
-			break
-	}
-},
-
-*/
-
 socketNotificationReceived: function(notification, payload){
-	Log.log('MMM-Systemvalues: socketNotificationReceived ' + notification + payload);
+	// Log.log('MMM-Systemvalues: socketNotificationReceived ' + notification + payload);
 	switch(notification) {
 		case "VALUES":
 			this.valueList = payload;
