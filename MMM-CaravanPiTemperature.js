@@ -14,7 +14,7 @@ Module.register("MMM-CaravanPiTemperature",{
 
 defaults:{
 	valueDir: "/home/pi/CaravanPi/values",
-	updateInterval: 300000, // milliseconds
+	updateInterval: 60000, // milliseconds
 	tempUnit: " °C",
 	tempPrecision: 2,
 	showDate: true,
